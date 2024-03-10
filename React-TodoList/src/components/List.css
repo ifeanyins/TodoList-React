@@ -1,0 +1,6 @@
+.container{
+    border: solid  lightblue 2px;
+    height: 550px;
+    width: 550px;
+    border-radius: 10px;
+}
