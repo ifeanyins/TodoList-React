@@ -7,9 +7,10 @@ function App() {
 
   return (
     <div>
-      <List />
+      <List /> 
     </div>
   )
 }
 
-export default App
+export default App 
+
