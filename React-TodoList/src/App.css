@@ -3,8 +3,26 @@
   margin: 0 auto;
   padding: 2rem;
 }
-.header-text{
-  padding-left: 20px;
+.header-text,
+.input,
+.input-Text{
+  margin-left: 20px;
+}
+.input-Text{
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: 700;
+}
+.input{
+  padding:7px 170px;
+  margin-bottom: 20px;
+  border: 1px solid green;
+}
+.save-btn {
+  padding:12px 240px;
+  background-color: black;
+  color: #fff;
+  margin-left: 20px;
 }
 .header-cont{
   display: flex;

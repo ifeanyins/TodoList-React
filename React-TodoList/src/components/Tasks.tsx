@@ -17,17 +17,19 @@ const Tasks = ( ) => {
   }
 
   const AddTask = () => {
-    setTasks([...tasks, newTasks])
+    if(newTasks.trim() !== "")
+    setTasks(t =>[...t, newTasks])
+    setNewTasks('');
   }
   return (
     <>
      <div>
         <label >
-          <span>Task</span>
+          <span className='input-Text'>Task</span>
             <br />
-            <input  type="text" value={newTasks} onChange={handleInputChange}/>
+            <input className='input' placeholder='ENTER A TASK.....' type="text" value={newTasks} onChange={handleInputChange}/>
        </label>
-      <Button btnText={"Save"} bgcolor={"black"} color={"white"} width={"400px"} onClick={AddTask}/>
+       <button className='save-btn' onClick={AddTask}>Save</button>
     </div>
     <ul>
       {tasks.map((e, idx) => <li key={idx} >{e}<FaTimes style={{color: 'red', cursor: 'pointer'}} onClick={()=> deleteTask(idx)}/></li>)}
